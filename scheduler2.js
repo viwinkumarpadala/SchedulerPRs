@@ -289,7 +289,7 @@ const scheduleAllProcessing = async () => {
   await fetchAllIssueDetails('EIPs', AllEipsIssueDetails);
   await fetchAllPRDetails('ERCs', AllErcsPrDetails);
   await fetchAllIssueDetails('ERCs', AllErcsIssueDetails);
-  setInterval(scheduleAllProcessing, 12 * 60 * 60 * 1000); // Run every 12 hours
+  setInterval(scheduleAllProcessing, 24 * 60 * 60 * 1000); 
 };
 
 // Start the scheduler
